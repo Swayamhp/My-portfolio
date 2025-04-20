@@ -295,6 +295,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 /* On Hover - Animate Border */
@@ -384,11 +385,14 @@ footer {
 /* Media Queries for Small Screens */
 @media (max-width: 768px) {
   .projects {
-    grid-template-columns: 1fr; /* Stack cards in a single column for small screens */
+    display: flex;
+    flex-wrap: wrap;
     padding: 2rem 1rem;
   }
 
   .project {
+    width: 100%;
+    
     padding: 1rem;
   }
 
@@ -413,7 +417,6 @@ footer {
     font-size: 0.75rem;
   }
 }
-
 
 /* Tablet Devices */
 @media (max-width: 1024px) {

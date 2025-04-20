@@ -292,11 +292,13 @@ footer {
 
 @media (width <= 768px) {
   .projects {
-    grid-template-columns: 1fr;
+    flex-wrap: wrap;
     padding: 2rem 1rem;
+    display: flex;
   }
 
   .project {
+    width: 100%;
     padding: 1rem;
   }
 
